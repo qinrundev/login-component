@@ -1,29 +1,24 @@
 {
-  "name": "@qinrun/login-vue",
-  "version": "0.0.1",
-  "description": "> TODO: description",
-  "author": "zhaochy <zhaochy_2015@hotmail.com>",
-  "homepage": "https://github.com/qinrundev/login-component#readme",
-  "license": "ISC",
-  "main": "lib/login-vue.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/qinrundev/login-component.git"
-  },
+  "name": "login-vue",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
-  "bugs": {
-    "url": "https://github.com/qinrundev/login-component/issues"
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "vue-template-compiler": "^2.6.14"
   }
 }

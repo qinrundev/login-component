@@ -1,11 +1,24 @@
-# `@qinrun/login-vue`
+# login-vue
 
-> TODO: description
-
-## Usage
-
+## Project setup
 ```
-const loginVue = require('@qinrun/login-vue');
-
-// TODO: DEMONSTRATE API
+yarn install
 ```
+
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Lints and fixes files
+```
+yarn lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
