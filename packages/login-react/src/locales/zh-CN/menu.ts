@@ -1,0 +1,18 @@
+export default {
+  'menu.domain-list': '域',
+  'menu.welcome': '欢迎',
+  'menu.application': '应用管理',
+  'menu.application-detail': '应用详情',
+  'menu.user-management': '用户管理',
+  'menu.user-management.user-list': '用户列表',
+  'menu.user-management.user-detail': '用户详情',
+  'menu.user-management.org-list': '部门管理',
+  'menu.logging': '审计日志',
+  'menu.logging.login': '登录日志',
+  'menu.logging.operation': '操作日志',
+  'menu.login': '登录',
+  'menu.identity': '身份源',
+  'menu.identity.social': '社交身份源',
+  'menu.identity.enterprise': '企业身份源',
+  'menu.identity.identity-detail': '身份源详情',
+};
