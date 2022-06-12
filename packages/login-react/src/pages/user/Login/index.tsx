@@ -36,7 +36,7 @@ const Login: React.FC<LoginProps> = (props: any) => {
   const [useHeadImgUrl, setUseHeadImgUrl] = useState<boolean>(true);
   const dispatch = useDispatch();
 
-  const handleSubmit = (values: LoginParams) => {
+  const handleSubmit = async (values: LoginParams) => {
     dispatch({
       type: 'login/login',
       payload: {
