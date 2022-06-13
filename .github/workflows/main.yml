@@ -50,7 +50,7 @@ jobs:
           git config --global user.email action@github.com
           git config --global user.name Github Action
       - name: Publish 🚀
-        run: npm run publish
+        run: cat package.json & npm run publish
         # 利用 automation token publish 至 npm，这里NPM_TOKEN 就是我们上文中设定的
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
