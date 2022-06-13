@@ -1,11 +1,11 @@
 {
   "name": "@qinrun/react-example",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@qinrun/login-react": "^0.1.1",
+    "@qinrun/login-react": "^0.1.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
