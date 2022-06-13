@@ -6,7 +6,7 @@
   "author": "zhaochy <zhaochy_2015@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "publish": "lerna publish",
+    "publish": "lerna publish --conventional-commits -y --no-verify-access",
     "bootstrap": "lerna bootstrap"
   },
   "dependencies": {
