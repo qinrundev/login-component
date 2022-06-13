@@ -1,7 +1,9 @@
 {
   "name": "@qinrun/react-example",
   "version": "0.1.2",
-  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@qinrun/login-react": "^0.1.1",
     "@testing-library/jest-dom": "^5.14.1",

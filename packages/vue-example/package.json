@@ -1,6 +1,9 @@
 {
   "name": "@qinrun/vue-example",
   "version": "0.1.2",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",

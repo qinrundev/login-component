@@ -1,7 +1,9 @@
 {
   "name": "@qinrun/login-vue",
   "version": "0.1.2",
-  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
