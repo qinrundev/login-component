@@ -2,7 +2,7 @@ import {Divider, Modal, Space} from 'antd';
 import React, {CSSProperties, useState} from 'react';
 import { WechatOutlined } from '@ant-design/icons';
 import QrCode from './QrCode';
-import LogoButton from "@/componenets/LogoButton";
+import LogoButton from "./LogoButton";
 
 const OtherLogin: React.FC<{ applicationId: any,appInfo:any }> = (props: any) => {
   const [creating, setCreating] = useState(false);
