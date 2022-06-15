@@ -1,6 +1,6 @@
 {
   "name": "@qinrun/login-react-bak",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "login component for react",
   "author": "zhaochy <zhaochy_2015@hotmail.com>",
   "homepage": "https://github.com/qinrundev/login-component#readme",
@@ -11,7 +11,7 @@
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "package.json"
   ],
   "publishConfig": {
     "access": "public"
@@ -106,9 +106,6 @@
   "engines": {
     "node": ">=10.0.0"
   },
-  "files": [
-    "package.json"
-  ],
   "release": {
     "branches": [
       "master",
