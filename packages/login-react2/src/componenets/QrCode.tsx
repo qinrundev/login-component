@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import { RedoOutlined } from '@ant-design/icons';
 import axios from 'axios';
 import {apiServer} from '../config/env'
-
+import './WxQrCode'
 const QrCode: React.FC<{ appInfo: any; applicationId: string ;loginCallBackURL:string}> = (props: any) => {
   const [wxState, setWxState] = useState("");
 

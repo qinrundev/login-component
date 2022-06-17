@@ -1,11 +1,33 @@
-# `@qinrun/login-react`
+# dumi-myapp
 
-> TODO: description
+## Getting Started
 
-## Usage
+Install dependencies,
 
+```bash
+$ npm i
 ```
-const loginReact = require('@qinrun/login-react');
 
-// TODO: DEMONSTRATE API
+Start the dev server,
+
+```bash
+$ npm start
+```
+
+Build documentation,
+
+```bash
+$ npm run docs:build
+```
+
+Run test,
+
+```bash
+$ npm test
+```
+
+Build library via `father-build`,
+
+```bash
+$ npm run build
 ```
