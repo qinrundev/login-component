@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Index: React.FC<{ logo: any, showModal: any }> = (props: any) => {
+const Index: React.FC<{ logo: any, showModal: any, type :string }> = (props: any) => {
     const [mouseEnter, setMouseEnter] = useState(false);
     return (
         <div
@@ -17,7 +17,7 @@ const Index: React.FC<{ logo: any, showModal: any }> = (props: any) => {
             }}
             onMouseEnter={() => setMouseEnter(true)}
             onMouseLeave={() => setMouseEnter(false)}
-            onClick={() => { props.showModal(true) }}
+            onClick={() => { props.showModal(true,props.type) }}
         >
             {props.logo}
         </div>
