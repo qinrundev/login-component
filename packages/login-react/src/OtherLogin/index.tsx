@@ -1,15 +1,19 @@
 import {Divider, Modal, Space} from 'antd';
 import React, {CSSProperties, useState} from 'react';
-import { WechatOutlined } from '@ant-design/icons';
-//import QrCode from './QrCode';
-//import LogoButton from "../LogoButton/index";
+import { WechatOutlined,DingdingOutlined } from '@ant-design/icons';
+import QrCode from '../OtherLogin/QrCode';
+import LogoButton from "../LogoButton/index";
 
 const Index: React.FC<{ applicationId: any,appInfo:any }> = (props: any) => {
   const [creating, setCreating] = useState(false);
-
-
-  const showModal = (show: boolean) => {
-    setCreating(show);
+  const [creatDD, setCreatDD] = useState(false);
+  const showModal = (show: boolean,type: string) => {
+    if (type === "wx-web"){
+      setCreating(show);
+    }
+    if (type === "dd-web"){
+      setCreatDD(show);
+    }
   };
 
 
@@ -20,34 +24,45 @@ const Index: React.FC<{ applicationId: any,appInfo:any }> = (props: any) => {
     cursor: 'pointer',
   };
 
-  const buttonMap: Map<string, any> = new Map();
-  const wxLogo = (
-   /* <LogoButton logo={<WechatOutlined style={{ ...iconStyles, color: '#04BE02' }}  />} showModal={showModal}></LogoButton>*/
-    <button>abc</button>
-  )
-  buttonMap.set(
-    'wx-web',
-    wxLogo,
-  );
-  console.log(props.appInfo)
+  //console.log(props.appInfo)
   if (typeof props.appInfo=='undefined'){
     return <></>;
   }
-  const appLogin = props.appInfo.identityProviders.map((app:any, index:any) => (
-    <div key={index} style={{ display:app.enabled ? 'inline-block':'none' }}>
-      {buttonMap.get(app.identityProviderType)}
-      <Modal
-        key={index}
-        destroyOnClose
-        visible={creating}
-        title={null}
-        footer={null}
-        onCancel={() => setCreating(false)}
-      >
-        {/*<QrCode appInfo={app} applicationId={props.applicationId} loginCallBackURL={props.appInfo.loginCallBackURL}></QrCode>*/}
-      </Modal>
-    </div>
-  ));
+  const appLogin = props.appInfo.identityProviders.map((identityProvider:any, index:any) =>  {
+    if (identityProvider.identityProviderType === 'wx-web') {
+      return (
+        <div key={index} style={{ display: 'inline-block' }}>
+          <LogoButton logo={<WechatOutlined style={{ ...iconStyles, color: '#04BE02' }}  />} showModal={showModal} type="wx-web"></LogoButton>
+          <Modal
+            destroyOnClose
+            visible={creating}
+            title={null}
+            footer={null}
+            onCancel={() => setCreating(false)}
+          >
+            {<QrCode  identityProvider={identityProvider} applicationId={props.applicationId} loginCallBackURL={props.appInfo.loginCallBackURL}></QrCode>}
+          </Modal>
+        </div>
+      );
+    } else if (identityProvider.identityProviderType === 'dd-web') {
+      return (
+        <div key={index} style={{ display: 'inline-block' }}>
+          <LogoButton logo={<DingdingOutlined style={{ ...iconStyles, color: '#464DC2FF' }}  />} showModal={showModal} type="dd-web"></LogoButton>
+          <Modal
+            destroyOnClose
+            visible={creatDD}
+            title={null}
+            footer={null}
+            onCancel={() => setCreatDD(false)}
+          >
+            {<QrCode identityProvider={identityProvider} applicationId={props.applicationId} loginCallBackURL={props.appInfo.loginCallBackURL}></QrCode>}
+          </Modal>
+        </div>
+      );
+    } else {
+      return undefined;
+    }
+  })
 
   if (props.appInfo.identityProviders.length > 0) {
     return (

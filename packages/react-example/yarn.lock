@@ -2385,16 +2385,17 @@
   resolved "https://registry.npmmirror.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
-"@zzx000/dumi-myapp@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@zzx000/dumi-myapp/-/dumi-myapp-1.0.2.tgz#0ced1c03e7bd464aee2cfb5435008907ea7d5c56"
-  integrity sha512-7tRiuDmOwVsWQeCfvMqo2OCbKK+L8TyQzY4vmEdLMRidJqqcLqaSMrxrJUL8OWHArYXiwadviNhddT6G1ceYLQ==
+"@zzx000/dumi-myapp@1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@zzx000/dumi-myapp/-/dumi-myapp-1.0.10.tgz#6bf95cd2dc81be34084a9bb11483aa39068f6f61"
+  integrity sha512-AufTbCAnQIaOup8rf9EZyLpzuftCYt3O5APS3plOsW53DC1tjUiPesQqIB0C/BQZli5ELiCQKlAqp2Um+Ao7Nw==
   dependencies:
     "@ant-design/icons" "^4.7.0"
     "@ant-design/pro-form" "^1.52.0"
     antd "^4.17.0"
     axios "^0.27.2"
-    react "^16.12.0 || ^17.0.0 || ^18.1.0"
+    react "^18.2.0"
+    react-dom "^18.2.0"
 
 abab@^2.0.3, abab@^2.0.5:
   version "2.0.6"
@@ -7805,7 +7806,7 @@ react-dev-utils@^12.0.1:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
-react-dom@^18.1.0:
+react-dom@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
   integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
@@ -7902,7 +7903,7 @@ react-sortable-hoc@^2.0.0:
     invariant "^2.2.4"
     prop-types "^15.5.7"
 
-"react@^16.12.0 || ^17.0.0 || ^18.1.0", react@^18.1.0:
+react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
